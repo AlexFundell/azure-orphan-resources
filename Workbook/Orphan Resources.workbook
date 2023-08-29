@@ -163,6 +163,15 @@
       "name": "text - NoShow Overview"
     },
     {
+      "type": 12,
+      "content": {
+        "version": "NotebookGroup/1.0",
+        "groupType": "editable",
+        "items": []
+      },
+      "name": "Overview"
+    },
+    {
       "type": 1,
       "content": {
         "json": "# Overview Azure Orphan Resources"
@@ -1684,7 +1693,12 @@
         "queryType": 0,
         "resourceType": "microsoft.operationalinsights/workspaces"
       },
-      "name": "parameters - 78"
+      "conditionalVisibility": {
+        "parameterName": "selectedTab",
+        "comparison": "isEqualTo",
+        "value": "disks"
+      },
+      "name": "parameters - Disk Group By"
     },
     {
       "type": 3,
